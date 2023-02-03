@@ -1,0 +1,13 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 5%;
+    justify-content: space-around;
+}
+
+input {
+    margin: 5px;
+}
