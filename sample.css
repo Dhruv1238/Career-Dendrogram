@@ -1,0 +1,54 @@
+body {
+    justify-content: center;
+}
+
+.container {
+    padding: 5%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+background: linear-gradient(145deg, #6de2d4, #81fffd);
+box-shadow:  20px 20px 60px #67d5c9,
+            -20px -20px 60px #8bffff;
+}
+
+div:hover {
+    color: thistle;
+}
+
+button:hover {
+    color: yellowgreen;
+}
+
+p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div:hover p {
+    display: block;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
