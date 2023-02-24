@@ -1,12 +1,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url("pexels-rovenimagescom-949587.jpg");
+    /* background-image: repeating-linear-gradient(red, yellow 10%, green 20%); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 form {
-    background-color: #a5f8d3;
+    background-image:url("pexels-rovenimagescom-949587.jpg");
     padding: 2%;
 }
 
@@ -24,3 +25,95 @@ input {
 label {
     margin: 5px;
 }
+
+    #heading{
+        color: aliceblue;
+        margin: 1%;
+        padding: 1%;
+    }
+    #cimg{
+        /* background-image: url("dendrogram.png"); */
+            display: flex;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            }
+        
+    #img{
+            border-radius: 25px;
+
+        }
+
+
+    .navbar{
+        display: flex;
+    }
+
+
+    #navbar-ul {
+        list-style-type: none;
+        margin: 1%;
+        padding: 1%;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0); /* For browsers that do not support gradients */
+        background-image: url("pexels-rovenimagescom-949587.jpg");
+
+      }
+      
+    #navbar-li {
+        float: left;
+      }
+    
+      #navbar-li-main {
+        float: left;
+      }
+      #navbar-li-main a {
+        font-size:larger;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1.4vh 20ch;
+        text-decoration: none;
+      }
+      #navbar-li-main a:hover {
+        background-image: url("pexels-rovenimagescom-949587.jpg");
+      }
+      
+      #navbar-li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1.4vh 20ch;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      #navbar-li a:hover {
+        background-image: url("pexels-rovenimagescom-949587.jpg");
+      }
+      .box-login{
+        /* align-self: center; */
+        width: 380px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        overflow: hidden;        
+        }
+
+        .login{
+            display: flex;
+            align-self: center;
+            align-items: center;
+            justify-content: center;    
+            /* min-height: 100vh;   */
+
+            /* margin: 150px 150px 150px 500px; */
+            margin-top: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        #login-label{
+            color: rgb(255, 255, 255);
+        }
