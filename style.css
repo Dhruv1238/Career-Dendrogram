@@ -4,6 +4,8 @@ body {
     /* background-image: repeating-linear-gradient(red, yellow 10%, green 20%); */
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 
 form {
@@ -42,16 +44,18 @@ label {
         
     #img{
             border-radius: 25px;
-
+            border: 2px solid white;
         }
 
 
     .navbar{
         display: flex;
+        /* border: 2px solid black; */
     }
 
 
     #navbar-ul {
+        border: 2px solid black;
         list-style-type: none;
         margin: 1%;
         padding: 1%;
@@ -94,11 +98,13 @@ label {
       }
       .box-login{
         /* align-self: center; */
+        border-radius: 10px;
         width: 380px;
-        border-top-left-radius: 25px;
+        /* border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        border-bottom-right-radius: 25px; */
+        border: 2px solid black;
         overflow: hidden;        
         }
 
