@@ -11,7 +11,7 @@ function login(){
     }
 }
 
-asfunction res(){
+function res(){
     const email = document.getElementById("email").value;
     const pass = document.getElementById("password").value;
     const error= document.getElementById("error");
