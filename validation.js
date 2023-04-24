@@ -11,3 +11,15 @@ function login(){
     }
 }
 
+asfunction res(){
+    const email = document.getElementById("email").value;
+    const pass = document.getElementById("password").value;
+    const error= document.getElementById("error");
+    // error.innerHTML="";
+
+    if(email===""||pass===""){
+        error.innerHTML="email pass is required.<br>";
+        return false;
+    }
+    return true;
+}
