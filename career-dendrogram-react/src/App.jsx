@@ -1,23 +1,31 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar  from "./components/navbar/navbar.jsx";
-import { generateText } from './components/gpt/gpt.jsx'
+import  generateText  from './components/gpt/gpt.jsx'
 
 
-async function handleClick() {
-  const prompt = 'Hello, GPT-3!';
-  const generatedText = await generateText(prompt);
-  setText(generatedText);
-}
+
 
 function App() {
+
+  const [text, setText] = useState('');
+  
+  async function handleClick() {
+    const interests="Computer, IT"
+    const prompt = `Based on these interests: ${interests}, here are some career options:`;
+    const generatedText = await generateText(prompt);
+    setText(generatedText);
+    console.log("clicked");
+  }
+
   return (
     <>
     <Navbar />
-    
-    {/* <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1> */}
+    <div>
+      <h1>GPT-3 Career Generator</h1>
+      <button onClick={handleClick}>Generate Text</button>
+      <p>{text}</p>
+    </div>
     </> 
   )
 }
