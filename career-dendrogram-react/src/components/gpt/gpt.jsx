@@ -8,8 +8,8 @@ async function generateText(prompt) {
       prompt,
       max_tokens: 35,
       n: 1,
-      stop: '5',
-      temperature: 0.49,
+      stop: '6',
+      temperature: 0.7,
     }, {
       headers: {
         'Content-Type': 'application/json',
