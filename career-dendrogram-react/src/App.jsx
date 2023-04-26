@@ -14,7 +14,7 @@ function App() {
   async function handleSubmit(e) {
     e.preventDefault();
     setTyping(true);
-    const prompt = `Based on these interests: ${interests}, here is the list of 5 career options:`;
+    const prompt = `Based on these interests: ${interests}, here is the list of 5 potential career options:`;
     console.log(prompt);
     const generatedText = await generateText(prompt);
     console.log(generatedText);
