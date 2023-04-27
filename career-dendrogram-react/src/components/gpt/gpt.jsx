@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 
-const API_ENDPOINT = 'https://api.openai.com/v1/engines/curie/completions';
+const API_ENDPOINT = 'https://api.openai.com/v1/engines/davinci/completions';
 
 async function generateText(prompt) {
   try {
