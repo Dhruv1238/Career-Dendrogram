@@ -1,8 +1,9 @@
 nav {
-  background-color: #333;
+  background-color: #242424;
   overflow: hidden;
   position: sticky;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navtitle {
@@ -21,17 +22,56 @@ nav {
 
 a {
   display: inline-block;
-  color: white;
+  color: whitesmoke;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 a:hover {
-  background-color: #ddd;
+  background-color: #4BAABF;
   color: black;
 }
 
-@media screen and (max-width: 700px) {
-  
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 3%;
 }
+
+.line {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+  .navitems {
+    display: none;
+  }
+  .hamburger {
+    padding-top: 3.3%;
+    display: block;
+  }
+  .navbar.responsive .navitems {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar.responsive .navitems ul {
+    display: inline-block;
+    width: 100%;
+  }
+  .navbar.responsive .navitems ul li {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navtitle {
+    margin-left: 1%;
+  }
+}
+

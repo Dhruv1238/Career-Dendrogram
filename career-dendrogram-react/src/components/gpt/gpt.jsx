@@ -1,4 +1,5 @@
 import axios from 'axios';
+import React, { useState } from 'react';
 
 const API_ENDPOINT = 'https://api.openai.com/v1/engines/curie/completions';
 
@@ -8,8 +9,8 @@ async function generateText(prompt) {
       prompt,
       max_tokens: 35,
       n: 1,
-      stop: '.\n',
-      temperature: 0.5,
+      stop: '6',
+      temperature: 0.7,
     }, {
       headers: {
         'Content-Type': 'application/json',
@@ -25,4 +26,52 @@ async function generateText(prompt) {
   }
 }
 
-export default generateText ;
+function Gpt() {
+  const [typing,setTyping]=useState(false);
+  const [interests, setInterests] = useState('');
+  const [text, setText] = useState('');
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setTyping(true);
+    const prompt = `Based on these interests: ${interests}, here are the names of potential career options in numbered list format:`;
+    console.log(prompt);
+    const generatedText = await generateText(prompt);
+    console.log(generatedText);
+  
+    if (generatedText) {
+      setText(generatedText);
+      setTyping(false);
+    } else {
+      console.error("Empty text output");
+      setTyping(false);
+    }
+  }
+  return (
+    <div>
+    <h1>Find Your Career</h1>
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        value={interests}
+        onChange={(e) => setInterests(e.target.value)}
+        placeholder="Enter your interests"
+      />
+      <button type="submit">Generate</button>
+    </form>
+    <div type="text-output">
+      {typing ? "Generating..." : null}
+    </div>
+    <div className="text-output">
+      <p>{text}</p>
+    </div>
+  </div>
+  )
+}
+
+
+
+
+
+
+export default Gpt;
