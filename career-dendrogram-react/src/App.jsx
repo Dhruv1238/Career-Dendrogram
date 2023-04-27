@@ -2,8 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar  from "./components/navbar/navbar.jsx";
 import Gpt from "./components/gpt/gpt.jsx";
-
-
+import Footer  from './components/footer/footer.jsx';
 
 
 
@@ -13,6 +12,9 @@ function App() {
     <div className="App">
     <Navbar />
     <Gpt />
+    <div className="wrapper">
+      <Footer />
+    </div>
     </div> 
   )
 }

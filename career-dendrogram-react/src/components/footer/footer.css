@@ -1,0 +1,62 @@
+.footer-container {
+  position:fixed;
+}
+
+.phantom {
+  display: block;
+  padding: 20px;
+  height: 60px;
+  width: 100%;
+}
+
+footer {
+  background-color: #242424;
+  border-top: 1px solid #E7E7E7;
+  text-align: center;
+  padding-top:0px;
+  padding-bottom: 100px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  color: #fff;
+}
+/* footer {
+  background-color: #242424;
+  color: #fff;
+  padding: 3rem 0;
+  
+} */
+
+footer h3 {
+  font-size: 1.5rem;
+  margin: 0.2%;
+}
+
+footer p {
+  margin: 1%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+  }
+
+  footer ul {
+    margin-top: 2rem;
+  }
+
+  footer li {
+    justify-content: center;
+  }
+
+  footer li i {
+    margin-right: 0.5rem;
+  }
+}
