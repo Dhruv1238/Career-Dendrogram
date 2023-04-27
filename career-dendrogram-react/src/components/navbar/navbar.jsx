@@ -25,6 +25,11 @@ function Navbar() {
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
+      <div className="hamburger" >
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+  </div>
     </nav>
   );
 }

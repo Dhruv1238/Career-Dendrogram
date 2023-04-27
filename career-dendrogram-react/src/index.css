@@ -12,4 +12,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  background-image: url('./assets/bg-asli.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width:900px){
+  :root{
+    background-image: none;
+    background: #242424;
+  }
 }
