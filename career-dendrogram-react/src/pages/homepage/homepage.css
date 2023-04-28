@@ -1,0 +1,7 @@
+.center {
+    text-align: center;
+    display: block;
+    padding:5%;
+    margin:auto;
+    width: 50%;
+  }

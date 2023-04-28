@@ -1,5 +1,8 @@
 .footer-container {
-  position:fixed;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .phantom {
