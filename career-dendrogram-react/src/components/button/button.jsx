@@ -3,10 +3,10 @@ import "./button.css";
 
 // button component
 
-function Button({inputValue}) {
+function Button({inputValue, lenk} ) {
     return (
         <div className="button">
-            <button>{inputValue}</button>
+            <button href={lenk}>{inputValue}</button>
         </div>
     );
 }

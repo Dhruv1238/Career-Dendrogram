@@ -20,9 +20,9 @@ function Navbar() {
       <div className='navitems'>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="/login">Login</a></li>
           <li><a href="/careers">Careers</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/signup">Signup</a></li>
         </ul>
       </div>
       <div className="hamburger" >
